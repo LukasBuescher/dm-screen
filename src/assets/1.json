@@ -1,0 +1,66 @@
+{
+    "id": "1",
+    "name": "Amè Goldenpelt",
+    "movement": 30,
+    "strength":16,
+    "dexterity":14,
+    "constitution":14,
+    "intelligence":10,
+    "wisdom":12,
+    "charisma":8,
+    "savingthrowstrength":1,
+    "savingthrowdexterity":0,
+    "savingthrowconstitution":1,
+    "savingthrowintelligence":0,
+    "savingthrowwisdom":0,
+    "savingthrowcharisma":0,
+
+    "acrobatics":0,
+    "animalhandling":0,
+    "arcana":0,
+    "athletics":1,
+    "deception":0,
+    "history":0,
+    "insight":1,
+    "intimidation":1,
+    "investigation":0,
+    "medicine":0,
+    "nature":0,
+    "perception":1,
+    "performance":0,
+    "persuasion":0,
+    "religion":0,
+    "sleightofhand":0,
+    "stealth":1,
+    "survival":0,
+    
+    "mainactions": [
+        {"name":"Greataxe Attack", "text":"Attack Bonus: +5 Damage: 1d12+3"},
+        {"name":"Cutlass Attack", "text":"Attack Bonus: +5 Damage: 1d6+3"},
+        {"name":"Musket Attack", "text":"Attack Bonus: +2 Damage: 1d12+2"}
+    ],
+    "bonusactions": [
+        {"name":"Rage", "text":"Gain Strength and Damage Resistance for 1 Minute(2/Day)"},
+        {"name":"Of Hand Attack", "text":"Attack Bonus: +5 Damage: 1d6"}
+    ],
+    "reactions":[
+        {"name":"Sentinel reaction","text":"Weapon attack against enemy who attacked ally"}
+    ],
+    "items": [
+        "Common Clothes",
+        "Large boarding axe",
+        "Musket",
+        "2 Cutlasses",
+        "Dufflebag",
+        "Bedroll",
+        "Mess Kit",
+        "Tinderbox",
+        "10 torches",
+        "10 days of rations",
+        "Waterskin",
+        "50 feet of hempen rope",
+        "Set of bone dice",
+        "Insignia of rank",
+        "A lucky charm"
+    ]
+}

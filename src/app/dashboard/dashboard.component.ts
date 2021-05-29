@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Character } from '../character';
+import { CharacterIds } from '../characterids';
 import { CharacterService } from '../character.service';
 
 @Component({
@@ -8,16 +8,16 @@ import { CharacterService } from '../character.service';
   styleUrls: [ './dashboard.component.css' ]
 })
 export class DashboardComponent implements OnInit {
-  characters: Character[] = [];
+  
+  characters: CharacterIds[] = [];
 
   constructor(private characterService: CharacterService) { }
 
   ngOnInit() {
-    this.getCharacteres();
+    this.getCharacters();
   }
 
-  getCharacteres(): void {
-    this.characterService.getCharacters()
-      .subscribe(characters => this.characters = characters.slice(1, 5));
+  getCharacters(): void {
+    this.characters = this.characterService.getCharacters()
   }
 }
