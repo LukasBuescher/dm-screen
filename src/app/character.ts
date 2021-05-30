@@ -12,16 +12,23 @@ export interface Character{
     intelligence: number;
     wisdom: number;
     charisma: number;
-    
-    SavingThrowStrength: number;
-    SavingThrowDexterity: number;
-    SavingThrowConstitution: number;
-    SavingThrowIntelligence: number;
-    SavingThrowWisdom: number;
-    SavingThrowCharisma: number;
+
+    strengthmodifier: number;
+    dexteritymodifier: number;
+    constitutionmodifier: number;
+    intelligencemodifier: number;
+    wisdommodifier: number;
+    charismamodifier: number;
+
+    strengthsavingthrow: number;
+    dexteritysavingthrow: number;
+    constitutionsavingthrow: number;
+    intelligencesavingthrow: number;
+    wisdomsavingthrow: number;
+    charismasavingthrow: number;
 
     acrobatics: number;
-    animalHandling: number;
+    animalhandling: number;
     arcana: number;
     athletics: number;
     deception: number;
@@ -35,12 +42,12 @@ export interface Character{
     performance: number;
     persuasion: number;
     religion: number;
-    sleightOfHand: number;
+    sleightofhand: number;
     stealth: number;
     survival: number;
 
-    actions: CharacterAction[];
-    bonusActions: CharacterAction[];
+    mainactions: CharacterAction[];
+    bonusactions: CharacterAction[];
     reactions: CharacterAction[];
 
     items: string[];
