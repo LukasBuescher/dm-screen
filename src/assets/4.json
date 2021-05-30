@@ -8,12 +8,20 @@
     "intelligence":10,
     "wisdom":12,
     "charisma":8,
-    "savingthrowstrength":1,
-    "savingthrowdexterity":0,
-    "savingthrowconstitution":1,
-    "savingthrowintelligence":0,
-    "savingthrowwisdom":0,
-    "savingthrowcharisma":0,
+
+    "strengthmodifier":3,
+    "dexteritymodifier":2,
+    "constitutionmodifier":2,
+    "intelligencemodifier":0,
+    "wisdommodifier":1,
+    "charismamodifier":-1,
+
+    "strengthsavingthrow":1,
+    "dexteritysavingthrow":0,
+    "constitutionsavingthrow":1,
+    "intelligencesavingthrow":0,
+    "wisdomsavingthrow":0,
+    "charismasavingthrow":0,
 
     "acrobatics":0,
     "animalhandling":0,
@@ -37,13 +45,15 @@
     "mainactions": [
         {"name":"Greataxe Attack", "text":"Attack Bonus: +5 Damage: 1d12+3"},
         {"name":"Cutlass Attack", "text":"Attack Bonus: +5 Damage: 1d6+3"},
-        {"name":"Musket Attack", "text":"Attack Bonus: +2 Damage: 1d12+2"}
+        {"name":"Musket Attack", "text":"Attack Bonus: +2 Damage: 1d12+2; Range: 40/120"}
     ],
     "bonusactions": [
         {"name":"Rage", "text":"Gain Strength and Damage Resistance for 1 Minute(2/Day)"},
-        {"name":"Of Hand Attack", "text":"Attack Bonus: +5 Damage: 1d6"}
+        {"name":"Off Hand Attack", "text":"While dual wielding attack with your second weapon; Attack Bonus: +5 Damage: 1d6"},
+        {"name":"Reload Musket", "text":"Reload your Firearm, if it has been fired"}
     ],
-    "reactions":[
+    "reactions":[        
+        {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity (Speed becomes 0)"},
         {"name":"Sentinel reaction","text":"Weapon attack against enemy who attacked ally"}
     ],
     "items": [

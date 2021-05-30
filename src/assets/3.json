@@ -1,6 +1,6 @@
 {
     "id": "3",
-    "name": "Colgrim Quillguard",
+    "name": "Corgrim Quillguard",
     "movement": 30,
     "strength":16,
     "dexterity":14,
@@ -8,12 +8,20 @@
     "intelligence":10,
     "wisdom":12,
     "charisma":8,
-    "savingthrowstrength":1,
-    "savingthrowdexterity":0,
-    "savingthrowconstitution":1,
-    "savingthrowintelligence":0,
-    "savingthrowwisdom":0,
-    "savingthrowcharisma":0,
+
+    "strengthmodifier":3,
+    "dexteritymodifier":2,
+    "constitutionmodifier":2,
+    "intelligencemodifier":0,
+    "wisdommodifier":1,
+    "charismamodifier":-1,
+
+    "strengthsavingthrow":1,
+    "dexteritysavingthrow":0,
+    "constitutionsavingthrow":1,
+    "intelligencesavingthrow":0,
+    "wisdomsavingthrow":0,
+    "charismasavingthrow":0,
 
     "acrobatics":0,
     "animalhandling":0,
@@ -35,32 +43,40 @@
     "survival":0,
     
     "mainactions": [
-        {"name":"Greataxe Attack", "text":"Attack Bonus: +5 Damage: 1d12+3"},
-        {"name":"Cutlass Attack", "text":"Attack Bonus: +5 Damage: 1d6+3"},
-        {"name":"Musket Attack", "text":"Attack Bonus: +2 Damage: 1d12+2"}
+        {"name":"Musket Attack", "text":"Attack Bonus: +3 Damage: 1d12+1; Range (40/120)"},
+        {"name":"Hammer/Sickle Attack", "text":"Attack Bonus: +1 Damage: 1d4; Range (40/120)"},
+        {"name":"Throw Magic Stone", "text":"Attack Bonus: +5 Damage: 1d6+3; Range (60)"},
+        {"name":"Catapult", "text":"Fire Object up to 90ft. in a straight line and deal 3d8 damage (Dexterity Saving Throw)"},
+        {"name":"False Life", "text":"Give Creature +1d4 + 4 temporary Hitpoints"},        
+        {"name":"Cure Wounds", "text":"Heal creature for 1d8 +3"},
+        {"name":"Magical Tinkering", "text":"Give Object magical properties"},
+        {"name":"Guidance", "text":"Give Creature +1d4 on ability check"}
     ],
     "bonusactions": [
-        {"name":"Rage", "text":"Gain Strength and Damage Resistance for 1 Minute(2/Day)"},
-        {"name":"Of Hand Attack", "text":"Attack Bonus: +5 Damage: 1d6"}
+        {"name":"Cast Magic Stone", "text":"3 Pebbles become magical projectiles"},
+        {"name":"Of Hand Attack", "text":"While dual wielding attack with your second weapon Attack Bonus: +1 Damage: 1d4"},
+        {"name":"Reload Musket", "text":"Reload your Firearm, if it has been fired"}
     ],
     "reactions":[
-        {"name":"Sentinel reaction","text":"Weapon attack against enemy who attacked ally"}
+        {"name":"Feather Fall","text":"Up to 5 Creatures fall slower"},
+        {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity"}
     ],
     "items": [
-        "Common Clothes",
-        "Large boarding axe",
-        "Musket",
-        "2 Cutlasses",
-        "Dufflebag",
-        "Bedroll",
-        "Mess Kit",
-        "Tinderbox",
+        "Hammer & Sickle",
+        "Musket ",
+        "Bullets (10)",
+        "Scale mail",
+        "Traveler’s clothes",
+        "Thieves’ tools ",
+        "Cartographer’s tool",
+        "backpack",
+        "Crowbar",
+        "Hammer",
+        "10 pitons",
         "10 torches",
-        "10 days of rations",
+        "Tinderbox",
+        "10 days of Rations",
         "Waterskin",
-        "50 feet of hempen rope",
-        "Set of bone dice",
-        "Insignia of rank",
-        "A lucky charm"
+        "50 feet of Hempen rope"        
     ]
 }
