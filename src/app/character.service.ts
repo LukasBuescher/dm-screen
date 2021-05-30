@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of, throwError} from 'rxjs';
 import { Character } from './character';
-import { MessageService } from './message.service';
 import { HttpClient } from "@angular/common/http";
 import { catchError, retry } from 'rxjs/operators';
 import { CharacterIds } from './characterids';
@@ -12,10 +11,10 @@ import { CharacterIds } from './characterids';
 export class CharacterService {
 
   characters: CharacterIds[] = [
-    {id:"1",name: "Grigor"},
-    {id:"2",name:"Bravio"},
-    {id:"3",name:"Amé"},
-    {id:"4",name:"Colgrim"}
+    {id:"1", name:"Amé"},
+    {id:"2", name:"Bravio"},
+    {id:"3", name:"Corgrim"},
+    {id:"4", name:"Grigor"}
   ];
 
   charactersUrl = './assets/characters.json'
@@ -31,5 +30,5 @@ export class CharacterService {
     return this.httpClient.get<Character>(characterUrl);
   }
 
-  constructor(private messageService: MessageService, private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 }

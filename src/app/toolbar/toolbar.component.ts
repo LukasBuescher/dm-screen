@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   
-  title = 'D&D Combat Cheat Sheet';
+  title = 'D&D Combat Cheat Sheet'
 
   constructor(
   ) { }
