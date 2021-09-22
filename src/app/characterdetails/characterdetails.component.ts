@@ -1,17 +1,19 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Character } from '../character';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterService } from '../services/character.service';
 import { CharacterAction } from '../characteraction';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-characterdetails',
   templateUrl: './characterdetails.component.html',
   styleUrls: ['./characterdetails.component.css']
 })
-export class CharacterdetailsComponent implements OnInit {
+export class CharacterdetailsComponent implements OnInit, OnDestroy {
 
-  @Input() character?: Character;
+  character: Character | undefined;
+  private _routerSubscription: Subscription | undefined;
 
   otheractions: CharacterAction[] =[
     {"name":"Dash", "text":"Double your Movement"},
@@ -30,12 +32,19 @@ export class CharacterdetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getCharacter();
+    this._routerSubscription = this.route.paramMap.subscribe(
+      result => {
+        const id = String(result.get('id'));
+        console.log(id)
+        this.characterService.getCharacter(id).subscribe(
+          char => this.character = char
+        )  
+      }
+    )
   }
 
-  getCharacter(): void {
-    const id = String(this.route.snapshot.paramMap.get('id'));
-    this.characterService.getCharacter(id).subscribe(character => this.character = character);
+  ngOnDestroy(): void {
+    this._routerSubscription?.unsubscribe();
   }
 
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CharacterIds } from '../characterids';
+import { CharacterService } from '../services/character.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -6,13 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
+    
   
-  title = 'D&D Combat Cheat Sheet'
+  characters: CharacterIds[] = [];
 
-  constructor(
+  constructor( private characterService: CharacterService
   ) { }
 
   ngOnInit(): void {
+    this.getCharacters()
+  }
+
+  
+  getCharacters(): void {
+    this.characters = this.characterService.getCharacters()
   }
 
 }
