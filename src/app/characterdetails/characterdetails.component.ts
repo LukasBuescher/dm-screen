@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Character } from '../character';
 import { ActivatedRoute } from '@angular/router';
-import { CharacterService } from '../character.service';
+import { CharacterService } from '../services/character.service';
 import { CharacterAction } from '../characteraction';
 
 @Component({

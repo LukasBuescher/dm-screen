@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Observable, of, throwError} from 'rxjs';
-import { Character } from './character';
+import { Observable } from 'rxjs';
+import { Character } from '../character';
 import { HttpClient } from "@angular/common/http";
-import { catchError, retry } from 'rxjs/operators';
-import { CharacterIds } from './characterids';
+import { CharacterIds } from '../characterids';
 
 @Injectable({
   providedIn: 'root'
