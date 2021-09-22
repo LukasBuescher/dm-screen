@@ -54,8 +54,7 @@
     ],
     "bonusactions": [
         {"name":"Cast Magic Stone", "text":"3 Pebbles become magical projectiles"},
-        {"name":"Of Hand Attack", "text":"While dual wielding attack with your second weapon Attack Bonus: +1 Damage: 1d4"},
-        {"name":"Reload Musket", "text":"Reload your Firearm, if it has been fired"}
+        {"name":"Of Hand Attack", "text":"While dual wielding attack with your second weapon Attack Bonus: +1 Damage: 1d4"}
     ],
     "reactions":[
         {"name":"Feather Fall","text":"Up to 5 Creatures fall slower"},
