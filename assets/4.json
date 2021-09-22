@@ -49,7 +49,8 @@
     ],
     "bonusactions": [
         {"name":"Rage", "text":"Gain Strength and Damage Resistance for 1 Minute(2/Day)"},
-        {"name":"Off Hand Attack", "text":"While dual wielding attack with your second weapon; Attack Bonus: +5 Damage: 1d6"}
+        {"name":"Off Hand Attack", "text":"While dual wielding attack with your second weapon; Attack Bonus: +5 Damage: 1d6"},
+        {"name": "Activate Cloak","text":"Let your cloak billow dramatically" }
     ],
     "reactions":[        
         {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity (Speed becomes 0)"},
