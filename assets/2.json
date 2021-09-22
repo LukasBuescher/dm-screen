@@ -1,0 +1,78 @@
+{
+    "id": "2",
+    "name": "Bravio Bratelli",
+    "movement": 30,
+    "strength":16,
+    "dexterity":14,
+    "constitution":14,
+    "intelligence":10,
+    "wisdom":12,
+    "charisma":8,
+
+    "strengthmodifier":3,
+    "dexteritymodifier":2,
+    "constitutionmodifier":2,
+    "intelligencemodifier":0,
+    "wisdommodifier":1,
+    "charismamodifier":-1,
+
+    "strengthsavingthrow":1,
+    "dexteritysavingthrow":0,
+    "constitutionsavingthrow":1,
+    "intelligencesavingthrow":0,
+    "wisdomsavingthrow":0,
+    "charismasavingthrow":0,
+
+    "acrobatics":0,
+    "animalhandling":0,
+    "arcana":0,
+    "athletics":1,
+    "deception":0,
+    "history":0,
+    "insight":1,
+    "intimidation":1,
+    "investigation":0,
+    "medicine":0,
+    "nature":0,
+    "perception":1,
+    "performance":0,
+    "persuasion":0,
+    "religion":0,
+    "sleightofhand":0,
+    "stealth":1,
+    "survival":0,
+    
+    "mainactions": [
+        {"name":"Knife Attack", "text":"Attack Bonus: +4 Damage: 1d4+2"},
+        {"name":"Vicous Mockery", "text":"Insult creature for 1d4 damgae and disadvantage on next attack roll (Wisdom saving throw)"},
+        {"name":"Tasha's Hideous Laughter", "text":"Creature falls prone and becomes incapacitated (Wisdom saving throw)"},
+        {"name":"Unearthly Chorus", "text":"Gain Advantage on Perfomance checks; Concentration (10 Minutes)"},
+        {"name":"Disguise Self", "text":"Make yourself look different"},
+        {"name":"Prestidigitation", "text":"Create harmless sensory effect (3 active effects at a time)"}
+
+    ],
+    "bonusactions": [
+        {"name":"Bardic Inpspiration", "text":"Give Ally +1d6 on either ability Check/attack roll/saving throw within the next 10 minutes 3/Day"},        
+        {"name":"Unearthly Chorus (If Active)", "text":"Creature becomes friendly and you make Deception und Persuasion checks with advantage (Charisma saving throw)"}
+    ],
+    "reactions":[
+        {"name":"Feather Fall","text":"Up to 5 Creatures fall slower"},
+        {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity"}
+    ],
+    "items": [
+        "Klappmesser",
+        "Common Clothes",
+        "Flöte", 
+        "Laute",
+        "Trommel",
+        "Rucksack",
+        "Bedroll", 
+        "2 Kostüme", 
+        "5 Kerzen", 
+        "5 Tagesrationen",
+        "Wasserflasche", 
+        "Disguise Kit",
+        "a token to remember your parents by",
+        "Gaming Set"
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "id": "3",
+    "name": "Corgrim Quillguard",
+    "movement": 30,
+    "strength":16,
+    "dexterity":14,
+    "constitution":14,
+    "intelligence":10,
+    "wisdom":12,
+    "charisma":8,
+
+    "strengthmodifier":3,
+    "dexteritymodifier":2,
+    "constitutionmodifier":2,
+    "intelligencemodifier":0,
+    "wisdommodifier":1,
+    "charismamodifier":-1,
+
+    "strengthsavingthrow":1,
+    "dexteritysavingthrow":0,
+    "constitutionsavingthrow":1,
+    "intelligencesavingthrow":0,
+    "wisdomsavingthrow":0,
+    "charismasavingthrow":0,
+
+    "acrobatics":0,
+    "animalhandling":0,
+    "arcana":0,
+    "athletics":1,
+    "deception":0,
+    "history":0,
+    "insight":1,
+    "intimidation":1,
+    "investigation":0,
+    "medicine":0,
+    "nature":0,
+    "perception":1,
+    "performance":0,
+    "persuasion":0,
+    "religion":0,
+    "sleightofhand":0,
+    "stealth":1,
+    "survival":0,
+    
+    "mainactions": [
+        {"name":"Musket Attack", "text":"Attack Bonus: +3 Damage: 1d12+1; Range (40/120)"},
+        {"name":"Hammer/Sickle Attack", "text":"Attack Bonus: +1 Damage: 1d4; Range (40/120)"},
+        {"name":"Throw Magic Stone", "text":"Attack Bonus: +5 Damage: 1d6+3; Range (60)"},
+        {"name":"Catapult", "text":"Fire Object up to 90ft. in a straight line and deal 3d8 damage (Dexterity Saving Throw)"},
+        {"name":"False Life", "text":"Give Creature +1d4 + 4 temporary Hitpoints"},        
+        {"name":"Cure Wounds", "text":"Heal creature for 1d8 +3"},
+        {"name":"Magical Tinkering", "text":"Give Object magical properties"},
+        {"name":"Guidance", "text":"Give Creature +1d4 on ability check"}
+    ],
+    "bonusactions": [
+        {"name":"Cast Magic Stone", "text":"3 Pebbles become magical projectiles"},
+        {"name":"Of Hand Attack", "text":"While dual wielding attack with your second weapon Attack Bonus: +1 Damage: 1d4"}
+    ],
+    "reactions":[
+        {"name":"Feather Fall","text":"Up to 5 Creatures fall slower"},
+        {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity"}
+    ],
+    "items": [
+        "Hammer & Sickle",
+        "Musket ",
+        "Bullets (10)",
+        "Scale mail",
+        "Traveler’s clothes",
+        "Thieves’ tools ",
+        "Cartographer’s tool",
+        "backpack",
+        "Crowbar",
+        "Hammer",
+        "10 pitons",
+        "10 torches",
+        "Tinderbox",
+        "10 days of Rations",
+        "Waterskin",
+        "50 feet of Hempen rope"        
+    ]
+}
