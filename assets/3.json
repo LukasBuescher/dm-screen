@@ -9,12 +9,12 @@
     "wisdom":12,
     "charisma":8,
 
-    "strengthmodifier":-1,
-    "dexteritymodifier":1,
+    "strengthmodifier":3,
+    "dexteritymodifier":2,
     "constitutionmodifier":2,
-    "intelligencemodifier":4,
-    "wisdommodifier":2,
-    "charismamodifier":0,
+    "intelligencemodifier":0,
+    "wisdommodifier":1,
+    "charismamodifier":-1,
 
     "strengthsavingthrow":1,
     "dexteritysavingthrow":0,
@@ -46,36 +46,29 @@
         {"name":"Musket Attack", "text":"Attack Bonus: +3 Damage: 1d12+1; Range (40/120)"},
         {"name":"Hammer/Sickle Attack", "text":"Attack Bonus: +1 Damage: 1d4; Range (40/120)"},
         {"name":"Throw Magic Stone", "text":"Attack Bonus: +5 Damage: 1d6+3; Range (60)"},
-        {"name":"Spell - Catapult", "text":"Fire Object up to 90ft. in a straight line and deal 3d8 damage (Dexterity Saving Throw)"},
-        {"name":"Spell - Cure Wounds", "text":"Heal creature for 1d8 +3"},
+        {"name":"Catapult", "text":"Fire Object up to 90ft. in a straight line and deal 3d8 damage (Dexterity Saving Throw)"},
+        {"name":"False Life", "text":"Give Creature +1d4 + 4 temporary Hitpoints"},        
+        {"name":"Cure Wounds", "text":"Heal creature for 1d8 +3"},
         {"name":"Magical Tinkering", "text":"Give Object magical properties"},
-        {"name":"Cantrip - Guidance", "text":"Give Creature +1d4 on ability check"},
-        {"name":"Cantrip - Fire Bolt", "text":""},
-        {"name":"Spell - Create Cannon", "text":"Eldritch Cannon (Small / Tiny) 1 / long rest or spell slot"},
-        {"name":"Dismiss Cannon", "text":"You can dismiss it early as an action"},
-        {"name":"Spell - Thunderwave", "text":"Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed. In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet."},
-        {"name":"Spell - Detect Thoughts", "text":"Write / Read / Find Thoughts within 30 feet"},
-        {"name":"[NOT-EQUIPPED] False Life", "text":"Give Creature +1d4 + 4 temporary Hitpoints"}
+        {"name":"Guidance", "text":"Give Creature +1d4 on ability check"}
     ],
     "bonusactions": [
-        {"name":"Ballista controll", "text": "On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs."},
-        {"name":"Of Hand Attack", "text":"While dual wielding attack with your second weapon Attack Bonus: +1 Damage: 1d4"},
-        {"name":"[NOT-EQUIPPED] Cast Magic Stone", "text":"3 Pebbles become magical projectiles"}
+        {"name":"Cast Magic Stone", "text":"3 Pebbles become magical projectiles"},
+        {"name":"Of Hand Attack", "text":"While dual wielding attack with your second weapon Attack Bonus: +1 Damage: 1d4"}
     ],
     "reactions":[
-        {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity"},
-        {"name":"Spell - Shield","text":"An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from Magic Missile."},
-        {"name":"[NOT-EQUIPPED] Feather Fall","text":"Up to 5 Creatures fall slower"}
+        {"name":"Feather Fall","text":"Up to 5 Creatures fall slower"},
+        {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity"}
     ],
     "items": [
         "Hammer & Sickle",
         "Musket ",
-        "Bullets (8)",
+        "Bullets (10)",
         "Scale mail",
         "Traveler’s clothes",
         "Thieves’ tools ",
         "Cartographer’s tool",
-        "Backpack",
+        "backpack",
         "Crowbar",
         "Hammer",
         "10 pitons",
