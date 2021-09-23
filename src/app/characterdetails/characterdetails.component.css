@@ -5,3 +5,8 @@
 .accordeon-row{
     height: 100%;
 } 
+
+.mat-icon-button{
+    align-content: flex-end;
+    float: right;
+}

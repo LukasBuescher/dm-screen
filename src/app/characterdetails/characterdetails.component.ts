@@ -24,7 +24,7 @@ export class CharacterdetailsComponent implements OnInit, OnDestroy {
     {"name":"Ready", "text":"Prepare an action"},        
     {"name":"Use Skill", "text":"Attempt to use on of your skills"},        
     {"name":"Shove/Grapple", "text":"Push creature away ore hold them in place"},
-    {"name":"Interact with Object", "text":"Interact with an Object in the environment or your inventory "}
+    {"name":"Interact with Object", "text":"Interact with an Object in the environment or your inventory sdasodsahdasöv ljdhasl dasjlhdasjlhdhskladäskladskla jdlskadksajdskajdklasjdkasjdlkj lkdskjdlkasjdklsajdlasdkljdlkajdskljdlkasjd skjdsklajdklsajdklsajdlksa" }
   ]            
   constructor(
     private route: ActivatedRoute,
