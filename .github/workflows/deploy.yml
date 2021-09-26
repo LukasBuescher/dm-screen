@@ -1,0 +1,22 @@
+name: Build and Deploy Angular GH Pages
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build_and_deploy:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2   # https://github.com/marketplace/actions/checkout
+    - name: Angular Deploy gh-pages Actions
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2  # https://github.com/marketplace/actions/angular-deploy-gh-pages-actions
+      with:
+        github_access_token: ${{ secrets.GITHUB_TOKEN }} # this is automatically set by Github. Private token not necessary, even on public repo.
+        # build_configuration: production # default. The build environment for the app. please look configurations in your angular.json
+        base_href: /dm-screen/   # make sure this corresponds to https://<your_username>.github.io/<base_href>/
+        # deploy_branch: gh-pages # default. The branch the action should deploy to.
+        angular_dist_build_folder: dist/dm-screen # should match "outputPath" from angular.json
