@@ -1,53 +1,25 @@
+import { Ability } from "./ability";
 import { CharacterAction } from "./characteraction"
+import { Skill } from "./skill";
 
 export interface Character{
     id: string;
     name: string;
 
+    subClass: string;
+    class: string;
+    race: string;
+
+    level: number;
+    proficiencyModifier: number;
     movement: number;
 
-    strength: number;
-    dexterity: number;
-    constitution: number;
-    intelligence: number;
-    wisdom: number;
-    charisma: number;
+    abilities: Ability[];
 
-    strengthmodifier: number;
-    dexteritymodifier: number;
-    constitutionmodifier: number;
-    intelligencemodifier: number;
-    wisdommodifier: number;
-    charismamodifier: number;
+    skills: Skill[];
 
-    strengthsavingthrow: number;
-    dexteritysavingthrow: number;
-    constitutionsavingthrow: number;
-    intelligencesavingthrow: number;
-    wisdomsavingthrow: number;
-    charismasavingthrow: number;
-
-    acrobatics: number;
-    animalhandling: number;
-    arcana: number;
-    athletics: number;
-    deception: number;
-    history: number;
-    insight: number;
-    intimidation: number;
-    investigation: number;
-    medicine: number;
-    nature: number;
-    perception: number;
-    performance: number;
-    persuasion: number;
-    religion: number;
-    sleightofhand: number;
-    stealth: number;
-    survival: number;
-
-    mainactions: CharacterAction[];
-    bonusactions: CharacterAction[];
+    mainActions: CharacterAction[];
+    bonusActions: CharacterAction[];
     reactions: CharacterAction[];
 
     items: string[];

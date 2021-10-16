@@ -2,47 +2,45 @@
     "id": "3",
     "name": "Corgrim Quillguard",
     "movement": 25,
-    "strength":8,
-    "dexterity":12,
-    "constitution":14,
-    "intelligence":18,
-    "wisdom":14,
-    "charisma":10,
+    "level": 4,
+    "proficiencyModifier": 2,
+    "class": "Artificer",
+    "subClass": "Artillerist",
+    "race": "Rock Gnome",
 
-    "strengthmodifier":-1,
-    "dexteritymodifier":1,
-    "constitutionmodifier":2,
-    "intelligencemodifier":4,
-    "wisdommodifier":2,
-    "charismamodifier":0,
 
-    "strengthsavingthrow":-1,
-    "dexteritysavingthrow":1,
-    "constitutionsavingthrow":4,
-    "intelligencesavingthrow":6,
-    "wisdomsavingthrow":2,
-    "charismasavingthrow":0,
-
-    "acrobatics":1,
-    "animalhandling":2,
-    "arcana":6,
-    "athletics":-1,
-    "deception":0,
-    "history":4,
-    "insight":4,
-    "intimidation":0,
-    "investigation":4,
-    "medicine":2,
-    "nature":4,
-    "perception":4,
-    "performance":0,
-    "persuasion":2,
-    "religion":4,
-    "sleightofhand":1,
-    "stealth":1,
-    "survival":2,
+    "abilities": [
+        {"name": "Strength", "score": 8, "modifier": -1, "savingThrow": -1},
+        {"name": "Dexterity", "score": 12, "modifier": 1, "savingThrow": 1},
+        {"name": "Constitution", "score": 14, "modifier": 2, "savingThrow": 4},
+        {"name": "Intelligence", "score": 18, "modifier": 4, "savingThrow": 6},
+        {"name": "Wisdom", "score": 14, "modifier": 2, "savingThrow": 2},
+        {"name": "Charisma", "score": 10, "modifier": 0, "savingThrow": 0}
+    ],
     
-    "mainactions": [
+    "skills": [
+        {"name":"Acrobatics", "modifier":1},
+        {"name":"Animalhandling", "modifier":2},
+        {"name":"Arcana", "modifier":6},
+        {"name":"Athletics", "modifier":-1},
+        {"name":"Deception", "modifier":0},
+        {"name":"History", "modifier":4},
+        {"name":"Insight", "modifier":4},
+        {"name":"Intimidation", "modifier":0},
+        {"name":"Investigation", "modifier":4},
+        {"name":"Medicine", "modifier":2},
+        {"name":"Nature", "modifier":4},
+        {"name":"Perception", "modifier":4},
+        {"name":"Performance", "modifier":0},
+        {"name":"Persuasion", "modifier":2},
+        {"name":"Religion", "modifier":4},
+        {"name":"Sleight of hand", "modifier":1},
+        {"name":"Stealth", "modifier":1},
+        {"name":"Survival", "modifier":2}
+    ],
+
+    
+    "mainActions": [
         {"name":"Musket Attack", "text":"Attack Bonus: +3 Damage: 1d12+1; Range (40/120)"},
         {"name":"Hammer/Sickle Attack", "text":"Attack Bonus: +1 Damage: 1d4; Range (40/120)"},
         {"name":"Throw Magic Stone", "text":"Attack Bonus: +5 Damage: 1d6+3; Range (60)"},
@@ -57,7 +55,7 @@
         {"name":"Spell - Detect Thoughts", "text":"Write / Read / Find Thoughts within 30 feet"},
         {"name":"[NOT-EQUIPPED] False Life", "text":"Give Creature +1d4 + 4 temporary Hitpoints"}
     ],
-    "bonusactions": [
+    "bonusActions": [
         {"name":"Ballista controll", "text": "On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs."},
         {"name":"Of Hand Attack", "text":"While dual wielding attack with your second weapon Attack Bonus: +1 Damage: 1d4"},
         {"name":"[NOT-EQUIPPED] Cast Magic Stone", "text":"3 Pebbles become magical projectiles"}

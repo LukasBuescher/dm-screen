@@ -1,1 +1,42 @@
-<p>characterdetails-stats works!</p>
+<div fxLayout="row" fxLayoutGap="1rem">
+    <div>        
+        <div fxLayout="column">
+            <h2>General</h2>
+            <div>{{character?.race}}</div>
+            <div>Level {{character?.level}} {{character?.class}} ({{character?.subClass}})</div>
+            <div>Movement {{character?.movement}}</div>
+            <div>Proficiency Modifier {{character?.proficiencyModifier}}</div>
+        </div>
+        <mat-divider></mat-divider>
+        <h2>Abilites</h2>
+        <table>
+            <tr>
+                <th>Ability </th>
+                <th>Score </th>
+                <th>Modifier</th>
+                <th>Saving Throw</th>
+            </tr>
+            <tr *ngFor="let ability of character?.abilities">
+                <td> {{ability.name}} </td>
+                <td> {{ability.score}} </td>
+                <td> {{ability.modifier}} </td>
+                <td> {{ability.savingThrow}} </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <th>Skill </th>
+                <th>Modifier </th>
+            </tr>
+            <tr *ngFor="let skill of character?.skills">
+                <td> {{skill.name}} </td>
+                <td> {{skill.modifier}} </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+

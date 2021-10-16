@@ -2,7 +2,7 @@
     <div fxFlex="25">
         <h2>Actions (1/Turn)</h2>
         <mat-accordion displayMode="flat">
-            <mat-expansion-panel *ngFor="let mainaction of character.mainactions">
+            <mat-expansion-panel *ngFor="let mainaction of character.mainActions">
                 <mat-expansion-panel-header>
                     <mat-panel-title>{{mainaction.name}}</mat-panel-title>
                 </mat-expansion-panel-header> 
@@ -24,7 +24,7 @@
     <div fxFlex="25">
         <h2>Bonus Action (1/Turn)</h2>
         <mat-accordion displayMode="flat">                
-            <mat-expansion-panel *ngFor="let bonusaction of character.bonusactions">                    
+            <mat-expansion-panel *ngFor="let bonusaction of character.bonusActions">                    
                 <mat-expansion-panel-header>
                     <mat-panel-title>{{bonusaction.name}}</mat-panel-title>
                 </mat-expansion-panel-header>                    
