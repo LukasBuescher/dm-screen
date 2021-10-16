@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs'; 
 import { CharacterdetailsActionsComponent } from './characterdetails/characterdetails-actions/characterdetails-actions.component';  
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CharacterdetailsStatsComponent } from './characterdetails/characterdetails-stats/characterdetails-stats.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CharacterdetailsComponent,
     DashboardComponent,
     ToolbarComponent,
-    CharacterdetailsActionsComponent
+    CharacterdetailsActionsComponent,
+    CharacterdetailsStatsComponent,
   ],
   imports: [
     BrowserModule,

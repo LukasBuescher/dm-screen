@@ -1,11 +1,12 @@
 <div class="content-wrapper">
     <mat-tab-group mat-stretch-tabs>
+        <mat-tab label="Stats & Abilities"></mat-tab>        
+            <app-characterdetails-stats [character]="character"></app-characterdetails-stats>
         <mat-tab label="Combat-Actions">
             <div class="mat-tab-content">
                 <app-characterdetails-actions [character]="character"></app-characterdetails-actions>
             </div>
         </mat-tab>
-        <mat-tab label="Stats & Abilities"></mat-tab>
         <mat-tab label="Inventar"></mat-tab>
     </mat-tab-group>
 </div>
