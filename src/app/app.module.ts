@@ -14,14 +14,19 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatGridListModule} from '@angular/material/grid-list'; 
 import {MatListModule} from '@angular/material/list'; 
 import {MatExpansionModule} from '@angular/material/expansion';
-import {MatCardModule} from '@angular/material/card';  
+import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs'; 
+import { CharacterdetailsActionsComponent } from './characterdetails/characterdetails-actions/characterdetails-actions.component';  
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CharacterdetailsComponent,
     DashboardComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    CharacterdetailsActionsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +40,9 @@ import {MatCardModule} from '@angular/material/card';
     MatListModule,
     MatExpansionModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTabsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
