@@ -53,20 +53,20 @@
         {"name":"Sentinel reaction","text":"Weapon attack against enemy who attacked ally"}
     ],
     "items": [
-        "Common Clothes",
-        "Large boarding axe",
-        "Musket",
-        "2 Cutlasses",
-        "Dufflebag",
-        "Bedroll",
-        "Mess Kit",
-        "Tinderbox",
-        "10 torches",
-        "10 days of rations",
-        "Waterskin",
-        "50 feet of hempen rope",
-        "Set of bone dice",
-        "Insignia of rank",
-        "A lucky charm"
+        {"amount":1, "description":"Common Clothes"},
+        {"amount":1, "description":"Large boarding axe"},
+        {"amount":1, "description":"Musket"},
+        {"amount":2, "description":"Cutlass"},
+        {"amount":1, "description":"Dufflebag"},
+        {"amount":1, "description":"Bedroll"},
+        {"amount":1, "description":"Mess Kit"},
+        {"amount":1, "description":"Tinderbox"},
+        {"amount":10, "description":"Torch"},
+        {"amount":10, "description":"Rations"},
+        {"amount":1, "description":"Waterskin"},
+        {"amount":1, "description":"50 feet of hempen rope"},
+        {"amount":1, "description":"Set of bone dice"},
+        {"amount":1, "description":"Insignia of rank"},
+        {"amount":1, "description":"A lucky charm"}
     ]
 }

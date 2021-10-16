@@ -58,19 +58,19 @@
         {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity"}
     ],
     "items": [
-        "Klappmesser",
-        "Common Clothes",
-        "Flöte", 
-        "Laute",
-        "Trommel",
-        "Rucksack",
-        "Bedroll", 
-        "2 Kostüme", 
-        "5 Kerzen", 
-        "5 Tagesrationen",
-        "Wasserflasche", 
-        "Disguise Kit",
-        "a token to remember your parents by",
-        "Gaming Set"
+        {"amount":1, "description":"Switchblade"},
+        {"amount":1, "description":"Common Clothes"},
+        {"amount":1, "description":"Flute"}, 
+        {"amount":1, "description":"Lute"},
+        {"amount":1, "description":"Drum"},
+        {"amount":1, "description":"Backpack"},
+        {"amount":1, "description":"Bedroll"}, 
+        {"amount":2, "description":"Costume"}, 
+        {"amount":5, "description":"Candle"}, 
+        {"amount":5, "description":"Ration"},
+        {"amount":1, "description":"Waterbottle"}, 
+        {"amount":1, "description":"Disguise Kit"},
+        {"amount":1, "description":"Token to remember your parents by"},
+        {"amount":1, "description":"Gaming Set"}
     ]
 }

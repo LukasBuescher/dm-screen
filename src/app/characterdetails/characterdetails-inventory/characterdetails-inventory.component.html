@@ -2,7 +2,7 @@
     <mat-chip-list #itemList>
         <div class="item" *ngFor="let item of character?.items" >
             <button mat-icon-button (click)="addItem(item)" > <mat-icon>add</mat-icon> </button>
-            <span>{{item}} </span>
+            <span>{{item.description}} ({{item.amount}}) </span>
             <button mat-icon-button (click)="remove(item)" > <mat-icon>remove</mat-icon> </button>        
         </div>
         <input

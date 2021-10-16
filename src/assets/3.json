@@ -66,21 +66,21 @@
         {"name":"[NOT-EQUIPPED] Feather Fall","text":"Up to 5 Creatures fall slower"}
     ],
     "items": [
-        "Hammer & Sickle",
-        "Musket ",
-        "Bullets (8)",
-        "Scale mail",
-        "Traveler’s clothes",
-        "Thieves’ tools ",
-        "Cartographer’s tool",
-        "Backpack",
-        "Crowbar",
-        "Hammer",
-        "10 pitons",
-        "10 torches",
-        "Tinderbox",
-        "10 days of Rations",
-        "Waterskin",
-        "50 feet of Hempen rope"
+        {"amount":1, "description":"Hammer & Sickle"},
+        {"amount":1, "description":"Musket "},
+        {"amount":8, "description":"Bullets"},
+        {"amount":1, "description":"Scale mail"},
+        {"amount":1, "description":"Traveler’s clothes"},
+        {"amount":1, "description":"Thieves’ tools "},
+        {"amount":1, "description":"Cartographer’s tool"},
+        {"amount":1, "description":"Backpack"},
+        {"amount":1, "description":"Crowbar"},
+        {"amount":1, "description":"Hammer"},
+        {"amount":10, "description":"pitons"},
+        {"amount":10, "description":"torches"},
+        {"amount":1, "description":"Tinderbox"},
+        {"amount":10, "description":"days of Rations"},
+        {"amount":1, "description":"Waterskin"},
+        {"amount":1, "description":"50 feet of Hempen rope"}
     ]
 }

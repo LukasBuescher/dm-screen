@@ -55,20 +55,18 @@
         {"name":"Opportunity Attack","text":"Melee Attack against enemy who leaves your vicinity"}
     ],
     "items": [
-        "Leather armor",
-        "Travelers Clothes",
-        "Staff",
-        "Backpack",
-        "Crowbar",
-        "Hammer",
-        "10 pitons",
-        "10 torches",
-        "Tinderbox",
-        "10 Rations",
-        "Waterskin",
-        "50 feet of Hempen rope",
-        "Cooking Utensils",
-        "Hunting Trap",
-        "A Trophy from an animal you killed"
+        {"amount":1, "description":"Leather armor"},
+        {"amount":1, "description":"Travelers Clothes"},
+        {"amount":1, "description":"Staff"},
+        {"amount":1, "description":"Backpack"},
+        {"amount":1, "description":"Crowbar"},
+        {"amount":1, "description":"Hammer"},
+        {"amount":10, "description":"Piton"},
+        {"amount":10, "description":"Torch"},
+        {"amount":1, "description":"Tinderbox"},
+        {"amount":10, "description":"Ration"},
+        {"amount":1, "description":"Waterskin"},
+        {"amount":1, "description":"50 feet of Hempen rope"},
+        {"amount":1, "description":"Cooking Utensils"}
     ]
 }

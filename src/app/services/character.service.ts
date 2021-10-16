@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, ReplaySubject } from 'rxjs';
 import { Character } from '../shared/interfaces/character';
 import { HttpClient } from "@angular/common/http";
 import { CharacterIds } from '../shared/interfaces/characterids';
@@ -15,19 +15,38 @@ export class CharacterService {
     {id:"3", name:"Corgrim"},
     {id:"4", name:"Grigor"}
   ];
-
   charactersUrl = './assets/characters.json'
+
+  storage = window.localStorage
+
+  private readonly _character: ReplaySubject<Character>= new ReplaySubject<Character>();
+
+  constructor(private httpClient: HttpClient) { }
+
+  get character(): Observable<Character>{
+    return this._character.asObservable();
+  }
 
   getCharacters(): CharacterIds[] {
     return this.characters;
   }
 
-  getCharacter(id: string): Observable<Character> {
-    var characterUrl = './assets/';
-    characterUrl = characterUrl.concat(id);
-    characterUrl = characterUrl.concat('.json')
-    return this.httpClient.get<Character>(characterUrl);
+  fetchCharacter(id: string): void {
+    const res = this.storage.getItem(id)
+    if(!!res){
+      this._character.next( JSON.parse(res))
+    } else{
+      var characterUrl = './assets/';
+      characterUrl = characterUrl.concat(id);
+      characterUrl = characterUrl.concat('.json')
+      this.httpClient.get<Character>(characterUrl).subscribe( res => this._character.next(res));
+    }
+    
   }
 
-  constructor(private httpClient: HttpClient) { }
+  saveCharacter(character: Character): void{
+    const savedChar = JSON.stringify(character)
+    this.storage.setItem(character.id, savedChar)
+  }
+
 }

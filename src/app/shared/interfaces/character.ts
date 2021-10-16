@@ -1,5 +1,6 @@
 import { Ability } from "./ability";
 import { CharacterAction } from "./characteraction"
+import { Item } from "./item";
 import { Skill } from "./skill";
 
 export interface Character{
@@ -22,6 +23,6 @@ export interface Character{
     bonusActions: CharacterAction[];
     reactions: CharacterAction[];
 
-    items: string[];
+    items: Item[];
 
 }
