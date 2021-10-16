@@ -1,55 +1,52 @@
 {
     "id": "1",
     "name": "Amè Goldenpelt",
-    "movement": 30,
-    "strength":9,
-    "dexterity":13,
-    "constitution":16,
-    "intelligence":10,
-    "wisdom":12,
-    "charisma":15,
+    "movement": 35,
+    "level": 4,
+    "proficiencyModifier": 2,
+    "class": "Warlock",
+    "subClass": "Hexblade",
+    "race": "Leonin",
 
-    "strengthmodifier":-1,
-    "dexteritymodifier":1,
-    "constitutionmodifier":3,
-    "intelligencemodifier":0,
-    "wisdommodifier":1,
-    "charismamodifier":2,
-
-    "strengthsavingthrow":0,
-    "dexteritysavingthrow":0,
-    "constitutionsavingthrow":0,
-    "intelligencesavingthrow":0,
-    "wisdomsavingthrow":1,
-    "charismasavingthrow":1,
-
-    "acrobatics":0,
-    "animalhandling":0,
-    "arcana":0,
-    "athletics":1,
-    "deception":1,
-    "history":0,
-    "insight":0,
-    "intimidation":1,
-    "investigation":0,
-    "medicine":0,
-    "nature":1,
-    "perception":0,
-    "performance":0,
-    "persuasion":0,
-    "religion":0,
-    "sleightofhand":0,
-    "stealth":0,
-    "survival":1,
+    "abilities": [
+        {"name": "Strength", "score": 9, "modifier": -1, "savingThrow": 0},
+        {"name": "Dexterity", "score": 13, "modifier": 1, "savingThrow": 0},
+        {"name": "Constitution", "score": 16, "modifier": 3, "savingThrow": 0},
+        {"name": "Intelligence", "score": 10, "modifier": 0, "savingThrow": 0},
+        {"name": "Wisdom", "score": 12, "modifier": 1, "savingThrow": 1},
+        {"name": "Charisma", "score": 15, "modifier": 2, "savingThrow": 1}
+    ],
     
-    "mainactions": [
+    "skills": [
+        {"name":"Acrobatics", "modifier":0},
+        {"name":"Animalhandling", "modifier":0},
+        {"name":"Arcana", "modifier":0},
+        {"name":"Athletics", "modifier":0},
+        {"name":"Deception", "modifier":0},
+        {"name":"History", "modifier":0},
+        {"name":"Insight", "modifier":0},
+        {"name":"Intimidation", "modifier":0},
+        {"name":"Investigation", "modifier":0},
+        {"name":"Medicine", "modifier":0},
+        {"name":"Nature",  "modifier":0},
+        {"name":"Perception", "modifier":0},
+        {"name":"Performance", "modifier":0},
+        {"name":"Persuasion", "modifier":0},
+        {"name":"Religion", "modifier":0},
+        {"name":"Sleight of hand", "modifier":0},
+        {"name":"Stealth",  "modifier":0},
+        {"name":"Survival",  "modifier":0}
+    ],
+
+    
+    "mainActions": [
         {"name":"Spear Attack", "text":"Attack Bonus: +3 Damage: 1d8+1"},
         {"name":"Green Flame Blade", "text":"Weapon  Attack + flame damage to second target"},        
         {"name":"Eldritch Blast", "text":"Attack Bonus: +4 Damage: 1d10 Range 120ft."},     
         {"name":"Familiar", "text":"Summon or dismiss your Familiar"}
         
     ],
-    "bonusactions": [
+    "bonusActions": [
         {"name":"Daunting Roar", "text":"Creatures make Wisdom Save (DC:13) or become frightened of you; Range: 10ft; 1/Day"},
         {"name":"Hexblades Curse", "text":"Curse Creature: +2 on Damage Rolls, Crits on 19, on Death gain 3hp; 1/Rest "},
         {"name":"Hex", "text":"Curse Creature: +1d6 on Damage Rolls, Disadvantage on ability checks of your choice, on death move to different target; Concentration "}

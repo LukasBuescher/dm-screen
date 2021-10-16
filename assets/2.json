@@ -2,47 +2,44 @@
     "id": "2",
     "name": "Bravio Bratelli",
     "movement": 30,
-    "strength":16,
-    "dexterity":14,
-    "constitution":14,
-    "intelligence":10,
-    "wisdom":12,
-    "charisma":8,
+    "level": 4,
+    "proficiencyModifier": 2,
+    "class": "Bard",
+    "subClass": "College of Lore",
+    "race": "Half Elf",
 
-    "strengthmodifier":3,
-    "dexteritymodifier":2,
-    "constitutionmodifier":2,
-    "intelligencemodifier":0,
-    "wisdommodifier":1,
-    "charismamodifier":-1,
-
-    "strengthsavingthrow":1,
-    "dexteritysavingthrow":0,
-    "constitutionsavingthrow":1,
-    "intelligencesavingthrow":0,
-    "wisdomsavingthrow":0,
-    "charismasavingthrow":0,
-
-    "acrobatics":0,
-    "animalhandling":0,
-    "arcana":0,
-    "athletics":1,
-    "deception":0,
-    "history":0,
-    "insight":1,
-    "intimidation":1,
-    "investigation":0,
-    "medicine":0,
-    "nature":0,
-    "perception":1,
-    "performance":0,
-    "persuasion":0,
-    "religion":0,
-    "sleightofhand":0,
-    "stealth":1,
-    "survival":0,
     
-    "mainactions": [
+    "abilities": [
+        {"name": "Strength", "score": 9, "modifier": -1, "savingThrow": 0},
+        {"name": "Dexterity", "score": 13, "modifier": 1, "savingThrow": 0},
+        {"name": "Constitution", "score": 16, "modifier": 3, "savingThrow": 0},
+        {"name": "Intelligence", "score": 10, "modifier": 0, "savingThrow": 0},
+        {"name": "Wisdom", "score": 12, "modifier": 1, "savingThrow": 1},
+        {"name": "Charisma", "score": 15, "modifier": 2, "savingThrow": 1}
+    ],
+
+    "skills": [
+        {"name":"Acrobatics", "modifier":0},
+        {"name":"Animalhandling", "modifier":0},
+        {"name":"Arcana", "modifier":0},
+        {"name":"Athletics", "modifier":1},
+        {"name":"Deception", "modifier":1},
+        {"name":"History", "modifier":0},
+        {"name":"Insight", "modifier":0},
+        {"name":"Intimidation", "modifier":1},
+        {"name":"Investigation", "modifier":0},
+        {"name":"Medicine", "modifier":0},
+        {"name":"Nature", "modifier":1},
+        {"name":"Perception", "modifier":0},
+        {"name":"Performance", "modifier":0},
+        {"name":"Persuasion", "modifier":0},
+        {"name":"Religion", "modifier":0},
+        {"name":"Sleight of hand", "modifier":0},
+        {"name":"Stealth", "modifier":0},
+        {"name":"Survival", "modifier":1}
+    ],    
+    
+    "mainActions": [
         {"name":"Knife Attack", "text":"Attack Bonus: +4 Damage: 1d4+2"},
         {"name":"Vicous Mockery", "text":"Insult creature for 1d4 damgae and disadvantage on next attack roll (Wisdom saving throw)"},
         {"name":"Tasha's Hideous Laughter", "text":"Creature falls prone and becomes incapacitated (Wisdom saving throw)"},
@@ -51,7 +48,7 @@
         {"name":"Prestidigitation", "text":"Create harmless sensory effect (3 active effects at a time)"}
 
     ],
-    "bonusactions": [
+    "bonusActions": [
         {"name":"Bardic Inpspiration", "text":"Give Ally +1d6 on either ability Check/attack roll/saving throw within the next 10 minutes 3/Day"},        
         {"name":"Unearthly Chorus (If Active)", "text":"Creature becomes friendly and you make Deception und Persuasion checks with advantage (Charisma saving throw)"}
     ],
