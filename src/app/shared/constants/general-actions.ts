@@ -1,4 +1,4 @@
-import { CharacterAction } from "src/app/characteraction";
+import { CharacterAction } from "../interfaces/characteraction";
 
 export const generalActions: CharacterAction[] = [
     {"name":"Dash", "text":"Double your Movement"},

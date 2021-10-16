@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Character } from '../character';
+import { Character } from '../shared/interfaces/character';
 import { HttpClient } from "@angular/common/http";
-import { CharacterIds } from '../characterids';
+import { CharacterIds } from '../shared/interfaces/characterids';
 
 @Injectable({
   providedIn: 'root'

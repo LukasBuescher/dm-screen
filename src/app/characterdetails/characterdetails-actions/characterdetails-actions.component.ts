@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Character } from 'src/app/character';
-import { CharacterAction } from 'src/app/characteraction';
+import { Character } from 'src/app/shared/interfaces/character';
 import { Input } from '@angular/core';
 import { generalActions } from 'src/app/shared/constants/general-actions';
+import { CharacterAction } from 'src/app/shared/interfaces/characteraction';
 
 @Component({
   selector: 'app-characterdetails-actions',

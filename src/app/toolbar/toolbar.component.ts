@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CharacterIds } from '../characterids';
 import { CharacterService } from '../services/character.service';
+import { CharacterIds } from '../shared/interfaces/characterids';
 
 @Component({
   selector: 'app-toolbar',
