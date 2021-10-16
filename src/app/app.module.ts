@@ -17,6 +17,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider'; 
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CharacterdetailsActionsComponent } from './characterdetails/characterdetails-actions/characterdetails-actions.component';  
 import { CharacterdetailsStatsComponent } from './characterdetails/characterdetails-stats/characterdetails-stats.component';
@@ -50,7 +51,8 @@ import { CharacterdetailsComponent } from './characterdetails/characterdetails.c
     MatTabsModule,
     MatExpansionModule,
     MatChipsModule,
-    MatDividerModule
+    MatDividerModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

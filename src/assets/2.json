@@ -18,26 +18,27 @@
         {"name": "Charisma", "score": 15, "modifier": 2, "savingThrow": 1}
     ],
 
+    
     "skills": [
         {"name":"Acrobatics", "modifier":0},
         {"name":"Animalhandling", "modifier":0},
         {"name":"Arcana", "modifier":0},
-        {"name":"Athletics", "modifier":1},
-        {"name":"Deception", "modifier":1},
+        {"name":"Athletics", "modifier":0},
+        {"name":"Deception", "modifier":0},
         {"name":"History", "modifier":0},
         {"name":"Insight", "modifier":0},
-        {"name":"Intimidation", "modifier":1},
+        {"name":"Intimidation", "modifier":0},
         {"name":"Investigation", "modifier":0},
         {"name":"Medicine", "modifier":0},
-        {"name":"Nature", "modifier":1},
+        {"name":"Nature",  "modifier":0},
         {"name":"Perception", "modifier":0},
         {"name":"Performance", "modifier":0},
         {"name":"Persuasion", "modifier":0},
         {"name":"Religion", "modifier":0},
         {"name":"Sleight of hand", "modifier":0},
-        {"name":"Stealth", "modifier":0},
-        {"name":"Survival", "modifier":1}
-    ],    
+        {"name":"Stealth",  "modifier":0},
+        {"name":"Survival",  "modifier":0}
+    ],
     
     "mainActions": [
         {"name":"Knife Attack", "text":"Attack Bonus: +4 Damage: 1d4+2"},

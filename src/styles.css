@@ -12,7 +12,6 @@ body {
   height: 100%;
 }
 
-
 mat-toolbar{
   max-height: 40px;
   position: fixed;

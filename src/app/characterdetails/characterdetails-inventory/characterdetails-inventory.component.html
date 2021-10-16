@@ -1,5 +1,12 @@
-<mat-chip-list>
-    <mat-chip *ngFor="let item of items" >
-        {{item}}
-    </mat-chip>
-</mat-chip-list>
+<mat-form-field style="width:100%">
+    <mat-chip-list #itemList>
+        <div class="item" *ngFor="let item of character?.items" >
+            <button mat-icon-button (click)="addItem(item)" > <mat-icon>add</mat-icon> </button>
+            <span>{{item}} </span>
+            <button mat-icon-button (click)="remove(item)" > <mat-icon>remove</mat-icon> </button>        
+        </div>
+        <input
+           [matChipInputFor]="itemList"
+           (matChipInputTokenEnd)="createItem($event)">
+    </mat-chip-list>
+</mat-form-field>

@@ -1,3 +1,10 @@
 .mat-tab-content{
     padding: 1rem;
 }
+
+.save-fab{
+    margin: 1rem;
+    position: fixed;
+    bottom: 0%;
+    right: 0;
+}
