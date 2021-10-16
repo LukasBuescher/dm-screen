@@ -5,16 +5,15 @@
                 <app-characterdetails-actions [character]="character"></app-characterdetails-actions>
             </div>
         </mat-tab>
+        <mat-tab label="Inventar">            
+            <div class="mat-tab-content">
+                <app-characterdetails-inventory [items]="character?.items"></app-characterdetails-inventory>
+            </div>
+        </mat-tab>
         <mat-tab label="Stats & Abilities">    
             <div class="mat-tab-content">
                 <app-characterdetails-stats [character]="character"></app-characterdetails-stats>
             </div> 
         </mat-tab>   
-        <mat-tab label="Inventar">
-            
-            <div class="mat-tab-content">
-                <app-characterdetails-inventory [items]="character?.items"></app-characterdetails-inventory>
-            </div>
-        </mat-tab>
     </mat-tab-group>
 </div>
