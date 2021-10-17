@@ -23,7 +23,7 @@ export class CharacterService {
 
   constructor(private httpClient: HttpClient) { }
 
-  get character(): Observable<Character>{
+  get getCharacter(): Observable<Character>{
     return this._character.asObservable();
   }
 
@@ -36,9 +36,7 @@ export class CharacterService {
     if(!!res){
       this._character.next( JSON.parse(res))
     } else{
-      var characterUrl = './assets/';
-      characterUrl = characterUrl.concat(id);
-      characterUrl = characterUrl.concat('.json')
+      var characterUrl = './assets/' + id + '.json';
       this.httpClient.get<Character>(characterUrl).subscribe( res => this._character.next(res));
     }
     

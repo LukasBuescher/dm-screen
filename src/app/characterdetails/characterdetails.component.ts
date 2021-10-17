@@ -1,9 +1,9 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { Character } from '../shared/interfaces/character';
-import { ActivatedRoute } from '@angular/router';
-import { CharacterService } from '../services/character.service';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { CharacterService } from '../services/character.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Character } from '../shared/interfaces/character';
 
 @Component({
   selector: 'app-characterdetails',
@@ -24,12 +24,12 @@ export class CharacterdetailsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {    
     this._routerSubscription = this.route.paramMap.subscribe(
-      result => {
-        const id = String(result.get('id'));
+      (params: ParamMap) => {
+        const id = String(params.get('id'));
         this.characterService.fetchCharacter(id);
       }
     )
-    this._charSubscription = this.characterService.character.subscribe(
+    this._charSubscription = this.characterService.getCharacter.subscribe(
       char => this.character = char
     )  
   }
@@ -42,7 +42,7 @@ export class CharacterdetailsComponent implements OnInit, OnDestroy {
   onSave(): void {
     if(!!this.character){
       this.characterService.saveCharacter(this.character);
-      this._snackBar.open( 'Saved ' + this.character.name + ' to localstorage' , 'Close');
+      this._snackBar.open( 'Saved ' + this.character.name + ' to localstorage' , 'X');
     }
   }
 
