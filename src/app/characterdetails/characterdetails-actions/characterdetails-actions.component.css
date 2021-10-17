@@ -1,0 +1,9 @@
+.action-header{
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.no-edit{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}

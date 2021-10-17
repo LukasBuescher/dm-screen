@@ -1,0 +1,21 @@
+<h1 mat-dialog-title> {{data.editMode ? "Edit" : "Add" }} Action</h1>
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label> Shorthand </mat-label>
+        <input matInput [formControl]="name">
+        <mat-error>
+            This field is empty
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label> Description </mat-label>
+        <textarea rows="4" matInput [formControl]="description"></textarea>
+        <mat-error>
+            This field is empty
+        </mat-error>
+    </mat-form-field>
+</div>
+<div mat-dialog-actions fxLayout="row" fxLayoutAlign="space-between">
+    <button mat-stroked-button (click)="onCancel()" color="primary"> Cancel </button>
+    <button mat-raised-button (click)="onSubmit()" cdkFocusInitial color="primary"> Submit </button>
+</div>

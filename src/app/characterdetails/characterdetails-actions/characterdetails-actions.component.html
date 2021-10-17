@@ -1,17 +1,25 @@
 <div *ngIf="character" fxLayout="row" fxLayoutGap="1rem">
     <div fxFlex="25">
-        <h2>Actions (1/Turn)</h2>
+        <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="action-header">Actions (1/Turn)</div> 
+            <button mat-icon-button (click)="onAddAction(character.mainActions)"> <mat-icon>add</mat-icon>  </button>
+        </div>
         <mat-accordion displayMode="flat">
-            <mat-expansion-panel *ngFor="let mainaction of character.mainActions">
+            <mat-expansion-panel *ngFor="let mainaction of character.mainActions; let index = index">
                 <mat-expansion-panel-header>
                     <mat-panel-title>{{mainaction.name}}</mat-panel-title>
                 </mat-expansion-panel-header> 
-                <p>{{mainaction.text}}</p>                            
+                <div fxLayout="row" fxLayoutAlign="start end">
+                    <p fxFlex="grow">{{mainaction.text}}</p>
+                    <button mat-icon-button class="edit-button" (click)="onEditAction(character.mainActions, index)"> <mat-icon> edit </mat-icon> </button>
+                </div>
             </mat-expansion-panel>
         </mat-accordion>
     </div>
     <div fxFlex="25">
-        <h2>General Actions</h2>
+        <div fxLayout="row" fxLayoutAlign="start center">
+            <span class="action-header no-edit">General Actions</span>
+        </div>
         <mat-accordion displayMode="flat">
             <mat-expansion-panel *ngFor="let otheraction of generalActions">
                 <mat-expansion-panel-header>
@@ -22,24 +30,36 @@
         </mat-accordion>
     </div>
     <div fxFlex="25">
-        <h2>Bonus Action (1/Turn)</h2>
+        <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="action-header">Bonus Action (1/Turn)</div>
+            <button mat-icon-button (click)="onAddAction(character.bonusActions)"> <mat-icon>add</mat-icon>  </button>
+        </div>
         <mat-accordion displayMode="flat">                
-            <mat-expansion-panel *ngFor="let bonusaction of character.bonusActions">                    
+            <mat-expansion-panel *ngFor="let bonusaction of character.bonusActions; let index = index">                    
                 <mat-expansion-panel-header>
                     <mat-panel-title>{{bonusaction.name}}</mat-panel-title>
-                </mat-expansion-panel-header>                    
-                <p>{{bonusaction.text}}</p>
+                </mat-expansion-panel-header>                
+                <div fxLayout="row" fxLayoutAlign="start end">
+                    <p fxFlex="grow">{{bonusaction.text}}</p>
+                    <button mat-icon-button class="edit-button" (click)="onEditAction(character.bonusActions, index)"> <mat-icon> edit </mat-icon> </button>
+                </div>
             </mat-expansion-panel>
         </mat-accordion> 
     </div>
     <div fxFlex="25">
-        <h2>Reaction (1/Round)</h2>
+        <div fxLayout="row" fxLayoutAlign="start center">
+            <div class="action-header">Reaction (1/Round)</div>
+            <button mat-icon-button (click)="onAddAction(character.reactions)"> <mat-icon>add</mat-icon>  </button>
+        </div>
         <mat-accordion displayMode="flat">                
-            <mat-expansion-panel *ngFor="let reaction of character.reactions">                    
+            <mat-expansion-panel *ngFor="let reaction of character.reactions; let index = index">                    
                 <mat-expansion-panel-header>
                     <mat-panel-title>{{reaction.name}}</mat-panel-title>
-                </mat-expansion-panel-header>                    
-                <p>{{reaction.text}}</p>
+                </mat-expansion-panel-header>
+                    <div fxLayout="row" fxLayoutAlign="start end">
+                        <p fxFlex="grow">{{reaction.text}}</p>
+                        <button mat-icon-button class="edit-button" (click)="onEditAction(character.reactions, index)"> <mat-icon> edit </mat-icon> </button>
+                    </div>
             </mat-expansion-panel>
         </mat-accordion> 
     </div>
