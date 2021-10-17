@@ -16,5 +16,8 @@
             </div> 
         </mat-tab>   
     </mat-tab-group>
-    <button mat-fab class="save-fab" color="primary" (click)="onSave()"> <mat-icon> save </mat-icon> </button>
+    <div class="fab-row" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="10px">
+        <a mat-mini-fab color="primary" [href]="downloadJsonHref" [download]="character?.id + '.json'"> <mat-icon> file_download </mat-icon> </a>
+        <button mat-fab color="primary" (click)="onSave()"> <mat-icon> save </mat-icon> </button>
+    </div>
 </div>

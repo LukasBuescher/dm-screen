@@ -20,11 +20,16 @@ export class CharacterService {
   storage = window.localStorage
 
   private readonly _character: ReplaySubject<Character>= new ReplaySubject<Character>();
+  private readonly _characterJson: ReplaySubject<string>= new ReplaySubject<string>();
 
   constructor(private httpClient: HttpClient) { }
 
   get getCharacter(): Observable<Character>{
     return this._character.asObservable();
+  }
+  
+  get getCharacterJson(): Observable<string>{
+    return this._characterJson.asObservable();
   }
 
   getCharacters(): CharacterIds[] {
@@ -34,10 +39,16 @@ export class CharacterService {
   fetchCharacter(id: string): void {
     const res = this.storage.getItem(id)
     if(!!res){
-      this._character.next( JSON.parse(res))
+      this._characterJson.next( res );
+      this._character.next( JSON.parse(res));
     } else{
       var characterUrl = './assets/' + id + '.json';
-      this.httpClient.get<Character>(characterUrl).subscribe( res => this._character.next(res));
+      this.httpClient.get<Character>(characterUrl).subscribe( 
+        res => {
+          this._character.next(res)          
+          this._characterJson.next( JSON.stringify(res) );
+        }
+      );
     }
     
   }

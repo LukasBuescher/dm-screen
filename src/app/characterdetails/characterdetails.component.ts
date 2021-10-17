@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { CharacterService } from '../services/character.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Character } from '../shared/interfaces/character';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-characterdetails',
@@ -15,8 +16,11 @@ export class CharacterdetailsComponent implements OnInit, OnDestroy {
   character: Character | undefined;
   private _routerSubscription: Subscription | undefined;
   private _charSubscription: Subscription | undefined;
+  private _jsonSubscription: Subscription | undefined;
+  downloadJsonHref: any;
             
   constructor(
+    private sanitizer: DomSanitizer,
     private route: ActivatedRoute,
     private characterService: CharacterService,
     private _snackBar: MatSnackBar
@@ -32,6 +36,12 @@ export class CharacterdetailsComponent implements OnInit, OnDestroy {
     this._charSubscription = this.characterService.getCharacter.subscribe(
       char => this.character = char
     )  
+    this._jsonSubscription = this.characterService.getCharacterJson.subscribe(
+      json => {
+        var uri = this.sanitizer.bypassSecurityTrustUrl("data:text/json;charset=UTF-8," + encodeURIComponent(json));
+        this.downloadJsonHref = uri;
+      }
+    )  
   }
 
   ngOnDestroy(): void {
@@ -44,6 +54,6 @@ export class CharacterdetailsComponent implements OnInit, OnDestroy {
       this.characterService.saveCharacter(this.character);
       this._snackBar.open( 'Saved ' + this.character.name + ' to localstorage' , 'X');
     }
-  }
+  }  
 
 }
