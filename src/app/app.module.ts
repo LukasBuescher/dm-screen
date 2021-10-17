@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatGridListModule} from '@angular/material/grid-list'; 
 import { MatListModule } from '@angular/material/list'; 
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSnackBarModule } from '@angular/material/snack-bar'; 
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatChipsModule } from '@angular/material/chips';
@@ -60,6 +61,7 @@ import { CharacterdetailsActionsDialogComponent } from './characterdetails/chara
     MatFormFieldModule,
     MatDialogModule,
     MatInputModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

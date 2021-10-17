@@ -3,7 +3,7 @@ import { Character } from '../shared/interfaces/character';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterService } from '../services/character.service';
 import { Subscription } from 'rxjs';
-import { ThrowStmt } from '@angular/compiler';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-characterdetails',
@@ -19,6 +19,7 @@ export class CharacterdetailsComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private characterService: CharacterService,
+    private _snackBar: MatSnackBar
   ) { }
 
   ngOnInit(): void {    
@@ -41,6 +42,7 @@ export class CharacterdetailsComponent implements OnInit, OnDestroy {
   onSave(): void {
     if(!!this.character){
       this.characterService.saveCharacter(this.character);
+      this._snackBar.open( 'Saved ' + this.character.name + ' to localstorage' , 'Close');
     }
   }
 
